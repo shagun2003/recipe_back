@@ -1,6 +1,6 @@
 import multer from 'multer';
 import { GridFsStorage } from 'multer-gridfs-storage';
-const mongoURI = 'mongodb+srv://user:mansi%402003@cluster1.z2k0zaz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1';
+const mongoURI = 'mongodb+srv://user:mansi%402003@cluster1.z2k0zaz.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster1';
 const storage = new GridFsStorage({
     url:mongoURI,
     options: { useNewUrlParser: true },
