@@ -7,7 +7,13 @@ import bodyParser from 'body-parser';
 import Connection from './database/db.js';
 import Router from './routes/routes.js';
 const PORT = 8000||process.env.PORT;
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors(
+  {
+             origin: ['http://localhost:3000' ],
+             methods:['GET,POST'],
+             credentials:true
+  }
+            ));
 app.use(express.json());
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
