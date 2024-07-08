@@ -9,9 +9,9 @@ import Router from './routes/routes.js';
 const PORT = 8000||process.env.PORT;
 app.use(cors(
   {
-             origin: ['https://recipe-front-five.vercel.app/login' ],
-             methods:['GET,POST'],
-             credentials:true
+    origin: 'https://recipe-front-five.vercel.app', 
+    methods: ['GET', 'POST', 'OPTIONS'],
+    credentials: true 
   }
             ));
 app.use(express.json());
