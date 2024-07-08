@@ -10,7 +10,7 @@ const PORT = 8000||process.env.PORT;
 app.use(cors(
   {
     origin: 'https://recipe-front-five.vercel.app', 
-    methods: ['GET', 'POST', 'OPTIONS'],
+    methods: ['GET', 'POST', 'OPTIONS , 'PUT', 'DELETE'],
     credentials: true 
   }
             ));
